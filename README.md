@@ -33,3 +33,12 @@ ACTION=="add", SUBSYSTEM=="backlight", RUN+="/bin/chgrp video /sys/class/backlig
 ```
 
 Apparently, directly using udev's `MODE` and `GROUP` [doesn't work here for some reason](https://wiki.archlinux.org/title/Talk:Backlight#Udev_rules_for_permissions_of_brightness_doesn't_work). The above does.
+
+### Usage
+
+This can e.g. be used to control the screen brightness via i3wm keyboard shortcuts by modifying `~/.i3/config`:
+
+```i3wm
+bindsym XF86MonBrightnessDown exec --no-startup-id "backlight_utility set --relative --notification relative -- -10"
+bindsym XF86MonBrightnessUp exec --no-startup-id "backlight_utility set --relative --notification relative -- 10"
+```
