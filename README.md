@@ -42,3 +42,15 @@ This can e.g. be used to control the screen brightness via i3wm keyboard shortcu
 bindsym XF86MonBrightnessDown exec --no-startup-id "backlight_utility set --relative --notification relative -- -10"
 bindsym XF86MonBrightnessUp exec --no-startup-id "backlight_utility set --relative --notification relative -- 10"
 ```
+
+The CLI interface offers the following commands:
+```bash
+backlight_utility get
+backlight_utility set
+```
+
+to set and retrieve the current brightness. Help is available accordingly:
+```bash
+backlight_utility get --help
+backlight_utility set --help
+```
