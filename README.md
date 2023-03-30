@@ -54,3 +54,10 @@ to set and retrieve the current brightness. Help is available accordingly:
 backlight_utility get --help
 backlight_utility set --help
 ```
+
+#### Examples
+```bash
+backlight_utility get
+backlight_utility set --  -50
+backlight_utility set --absolute --value --notification absolute 1000
+```
