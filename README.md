@@ -8,6 +8,13 @@ Features
 --------
 
 ### Installation
+#### Prerequisites
+
+- Linux
+- `notify-send` and a notification daemon
+- Python 3.10
+
+#### Setup
 
 ```bash
 git clone git@github.com:fxjung/backlight_utility.git
@@ -16,9 +23,7 @@ pip install -e .[dev]
 pre-commit install
 ```
 
-### Setup
-
-Create a `.env` file containing the paths to the respective files:
+Then create a `.env` file containing the paths to the respective files:
 ```dotenv
 BRIGHTNESS_PATH=/sys/class/backlight/intel_backlight/brightness
 MAX_BRIGHTNESS_PATH=/sys/class/backlight/intel_backlight/max_brightness
