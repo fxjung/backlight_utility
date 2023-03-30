@@ -21,7 +21,7 @@ pre-commit install
 
 ### Setup
 
-Create `.env` file containing the paths to the respective files:
+Create a `.env` file containing the paths to the respective files:
 ```dotenv
 BRIGHTNESS_PATH=/sys/class/backlight/intel_backlight/brightness
 MAX_BRIGHTNESS_PATH=/sys/class/backlight/intel_backlight/max_brightness
