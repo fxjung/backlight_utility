@@ -36,7 +36,7 @@ Apparently, directly using udev's `MODE` and `GROUP` [doesn't work here for some
 
 ### Usage
 
-This can e.g. be used to control the screen brightness via i3wm keyboard shortcuts by modifying `~/.i3/config`:
+This can e.g. be used to control the screen brightness via [i3wm](https://i3wm.org/) keyboard shortcuts by modifying `~/.i3/config`:
 
 ```i3wm
 bindsym XF86MonBrightnessDown exec --no-startup-id "backlight_utility set --relative --notification relative -- -10"
